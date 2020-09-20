@@ -15,9 +15,9 @@ namespace testConsoleApp1
             DateTime departureDate = new DateTime(2020, 9, 21);
             DateTime departureTime = new DateTime(2020, 9, 21, 8, 30, 0);
             ClassTrain testtrain = new ClassTrain("G9992", "SH", departureDate, departureTime, "CRH2A", 3);
-            string[] passesStations = { "安庆", "池州", "铜陵", "繁昌西", "芜湖南", "芜湖", "当涂", "马鞍山", "江宁西", "南京南" };
-            testtrain.setPassesStations(passesStations);
-            testtrain.InitTrain();
+            string[] passesStations = { "安庆", "池州", "铜陵", "芜湖", "马鞍山", "南京南", "镇江", "常州", "无锡", "苏州", "上海虹桥" };
+            testtrain.SetPassesStations(passesStations);
+            testtrain.InitTrain(3);
             testtrain.LoopThrough_seatCollection();
             Console.ReadLine();
         }

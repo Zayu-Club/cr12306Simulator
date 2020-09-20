@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pers.xxy.cr12306Simulator.b
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "testConsoleApp1", "testConsoleApp1\testConsoleApp1.csproj", "{1EDE6474-77B6-4884-8A3A-2EA8F2201D06}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "testBuyingTicketsConsoleApp1", "testBuyingTicketsConsoleApp1\testBuyingTicketsConsoleApp1.csproj", "{6A3961FF-E8C7-46BA-8E8C-1374F267B1B3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{1EDE6474-77B6-4884-8A3A-2EA8F2201D06}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1EDE6474-77B6-4884-8A3A-2EA8F2201D06}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1EDE6474-77B6-4884-8A3A-2EA8F2201D06}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A3961FF-E8C7-46BA-8E8C-1374F267B1B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A3961FF-E8C7-46BA-8E8C-1374F267B1B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A3961FF-E8C7-46BA-8E8C-1374F267B1B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A3961FF-E8C7-46BA-8E8C-1374F267B1B3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
