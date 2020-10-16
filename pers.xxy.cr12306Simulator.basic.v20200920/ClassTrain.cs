@@ -90,6 +90,31 @@ namespace pers.xxy.cr12306Simulator.basic.v20200920
                 }
                 Console.WriteLine();
             }
+            Console.WriteLine("------------------------");
+        }
+
+        /// <summary>
+        /// 返回当前ClassTrain在给定区间的余票
+        /// </summary>
+        /// <param name="soureStation">起点</param>
+        /// <param name="destStation">终点</param>
+        /// <returns></returns>
+        public int GetRemainingTicketsCount(string soureStation, string destStation)
+        {
+            int ticketsCount = 0;
+            if (IsSoure2DestEffective(soureStation, destStation))
+            {
+                int soureStationIndex = Array.IndexOf(passesStations, soureStation);
+                int destStationIndex = Array.IndexOf(passesStations, destStation);
+                foreach (ClassSeat Seat in SeatCollection)
+                {
+                    if (IsSeatBitMapInAreaEffective(Seat, soureStationIndex, destStationIndex))
+                    {
+                        ticketsCount++;
+                    }
+                }
+            }
+            return ticketsCount;
         }
 
         /// <summary>
